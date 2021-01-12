@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="mds.rpg.FichaActivity">
+    <item
+        android:id="@+id/mini_acao1"
+        android:orderInCategory="100"
+        android:title="@string/salvar_lbl"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,418 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoPrincipal">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="187dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CampoNome"
+                android:weightSum="1">
+
+                <TextView
+                    android:text="@string/nome_lbl"
+                    android:layout_width="55dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView11"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:textAllCaps="false" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/edt_nome" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CampoRaca"
+                android:layout_weight="0.03">
+
+                <TextView
+                    android:text="@string/raca_lbl"
+                    android:layout_width="54dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView12"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold"
+                    android:fontFamily="sans-serif" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spn_raca" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CampoClasse">
+
+                <TextView
+                    android:text="@string/classe_lbl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView13"
+                    android:textSize="18sp"
+                    android:textStyle="normal|bold" />
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spn_classe"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/CampoNivel">
+
+                <TextView
+                    android:text="@string/nivel_lbl"
+                    android:layout_width="53dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView14"
+                    android:textStyle="normal|bold"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:ems="10"
+                    android:id="@+id/edt_nivel"
+                    android:layout_weight="1"
+                    android:editable="false"
+                    android:enabled="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="166dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@android:drawable/ic_menu_camera"
+            android:id="@+id/imgb_Foto" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoExperiencia">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="EXP Total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:layout_weight="0.21" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/edt_exp"
+                android:layout_weight="1"
+                android:enabled="true" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+
+            <TextView
+                android:text="EXP Obtido"
+                android:id="@+id/textView17"
+                android:textSize="18sp"
+                android:textStyle="normal|bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/edt_expObtido"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@android:drawable/ic_input_add"
+                android:id="@+id/btn_addExp"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoForca">
+
+        <TextView
+            android:text="@string/forca_lbl"
+            android:layout_width="91dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView23"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_forca" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView26"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modForca"
+            android:layout_width="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoDestreza"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/destreza_lbl"
+            android:layout_width="92dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView24"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="78dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_destreza" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView27"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modDes"
+            android:layout_width="50dp"
+            android:layout_weight="0.14" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoConst">
+
+        <TextView
+            android:text="@string/const_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:layout_weight="0.00"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_const" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="57dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modConst"
+            android:layout_weight="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoInt"
+        android:layout_weight="0.00">
+
+        <TextView
+            android:text="@string/int_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:layout_weight="0.00"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_int" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modInt"
+            android:layout_weight="0.00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoSab"
+        android:layout_weight="0.00">
+
+        <TextView
+            android:text="@string/sab_lbl"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_sab" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="58dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modSab" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CampoCar"
+        android:layout_weight="0.00">
+
+        <TextView
+            android:text="@string/car_lbl"
+            android:layout_width="94dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView25"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="76dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_car" />
+
+        <TextView
+            android:text="@string/mod_lbl"
+            android:layout_width="56dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView28"
+            android:textSize="18sp"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/edt_modCar"
+            android:layout_width="58dp" />
+    </LinearLayout>
+
+</LinearLayout>

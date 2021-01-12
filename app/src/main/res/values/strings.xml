@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">RPG</string>
+    <string name="Ok_button">OK</string>
+    <string name="btn_new">Nova FIcha</string>
+    <string name="title_activity_ficha">FichaActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="nome_lbl">Nome</string>
+    <string name="raca_lbl">Raça</string>
+    <string name="classe_lbl">Classe</string>
+    <string name="nivel_lbl">Nível</string>
+    <string name="forca_lbl">Força</string>
+    <string name="destreza_lbl">Destreza</string>
+    <string name="const_lbl">Contituição</string>
+    <string name="int_lbl">Inteligência</string>
+    <string name="sab_lbl">Sabedoria</string>
+    <string name="car_lbl">Carisma</string>
+    <string name="arma_lbl">Arma</string>
+    <string name="equip_lbl">Equipamento</string>
+    <string name="salvar_lbl">Salvar</string>
+    <string name="excluir_lbl">Excluir</string>
+    <string name="pv_lbl">PV</string>
+    <string name="pvAtual_lbl">PV Atual</string>
+    <string name="dano_lbl">Dano</string>
+    <string name="mod_lbl">Mod:</string>
+</resources>
